@@ -1,0 +1,107 @@
+*{
+	text-decoration: none;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(51,51,51,1) 100%);
+    color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+
+    .header_nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+    }
+}
+
+main{
+    margin: 50px 0px;
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.height-100vh-index{
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;  /* Quita el subrayado */
+    color: inherit;        /* Hereda el color del elemento padre */
+    background: none;      /* Quita el fondo */
+    border: none;          /* Quita el borde */
+    padding: 0;            /* Quita el padding */
+    margin: 0;             /* Quita el margin */
+    display: inline;       /* Asegura que se comporte como un enlace */
+    font: inherit;         /* Hereda la fuente del elemento padre */
+
+    &:hover {
+        color: #0f9;      /* Cambia el color del texto al color de fondo */
+        border-bottom: #0f9 1px solid;  /* Agrega un borde inferior al color de fondo */
+    }
+}
+
+h1 {
+    width: 100%;
+    font-family: "Righteous";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-principal{
+    overflow: hidden;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    box-shadow:  30px 30px 92px #8989e1,
+             -30px -30px 92px #3333ff;
+    
+}
+
+.div--game_img{
+    width: 300px;
+}
+
+.about_me_img{
+    width: 125px;
+    border-radius: 100%;
+    overflow: hidden;
+
+}
+
