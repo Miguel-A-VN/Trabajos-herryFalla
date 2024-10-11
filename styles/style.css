@@ -10,13 +10,17 @@
 
 body{
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(51,51,51,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
     color: #fff;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.max-width-1400px{
+    max-width: 1400px;
 }
 
 header{
@@ -43,6 +47,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 footer{
@@ -52,9 +57,6 @@ footer{
     align-items: center;
 }
 
-.height-100vh-index{
-    height: 100vh;
-}
 
 a {
     text-decoration: none;  /* Quita el subrayado */
@@ -64,12 +66,15 @@ a {
     padding: 0;            /* Quita el padding */
     margin: 0;             /* Quita el margin */
     display: inline;       /* Asegura que se comporte como un enlace */
-    font: inherit;         /* Hereda la fuente del elemento padre */
+    font: inherit;/* Hereda la fuente del elemento padre */
 
-    &:hover {
-        color: #0f9;      /* Cambia el color del texto al color de fondo */
-        border-bottom: #0f9 1px solid;  /* Agrega un borde inferior al color de fondo */
-    }
+    transition: all 0.3s ease;
+}
+
+.a_hover:hover{
+
+    color: #0f9;      /* Cambia el color del texto al color de fondo */
+    border-bottom: #0f9 1px solid;  /* Agrega un borde inferior al color de fondo */
 }
 
 h1 {
@@ -79,19 +84,37 @@ h1 {
     font-style: normal;
   }
 
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
 img{
     width: 100%;
     height: 100%;
 }
 
-.img-principal{
+.a_img-principal{
+    display: block;
     overflow: hidden;
     border-radius: 25px;
-    width: 300px;
-    height: 400px;
-    box-shadow:  30px 30px 92px #8989e1,
-             -30px -30px 92px #3333ff;
+    height: 300px;
+    box-shadow:  
+        30px 30px 200px #5c5ca0,
+        -30px -30px 200px #3333ff;
+    transition: transform 0.5s ease;
     
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+}
+
+.div_img-principal{
+    width: 100%;
+    height: 100%;
 }
 
 .div--game_img{
