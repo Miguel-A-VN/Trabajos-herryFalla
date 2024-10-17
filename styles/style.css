@@ -1,3 +1,5 @@
+/*General*/
+
 *{
 	text-decoration: none;
 	box-sizing: border-box;
@@ -8,11 +10,21 @@
 	min-width: 0;
 }
 
-body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
-    color: #fff;
+/*Mis variables*/
 
+:root{
+    --color-bg: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
+    --color-text: #fff;
+    --color-link: #000;
+    --color-link-hover: #0f9;
+
+    --transition-ease-5s: all 0.5s ease;
+    --shadow-blue: 30px 30px 200px #5c5ca0,-30px -30px 200px #3333ff;
+}
+
+body{
+    background: var(--color-bg);
+    color: var(--color-text);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,14 +47,14 @@ header{
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height: 20%;
+        height: 35px;
     }
 }
 
 main{
     margin: 50px 0px;
     width: 100%;
-    height: 70%;
+    height: 70vh;
 
     display: flex;
     justify-content: center;
@@ -68,16 +80,16 @@ a {
     display: inline;       /* Asegura que se comporte como un enlace */
     font: inherit;/* Hereda la fuente del elemento padre */
 
-    transition: all 0.3s ease;
+    transition: var(--transition-ease-5s);
 }
 
 .a_hover:hover{
 
-    color: #0f9;      /* Cambia el color del texto al color de fondo */
-    border-bottom: #0f9 1px solid;  /* Agrega un borde inferior al color de fondo */
+    color: var(--color-link-hover);      /* Cambia el color del texto al color de fondo */
+    border-bottom: var(--color-link-hover) 1px solid;  /* Agrega un borde inferior al color de fondo */
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6{
     width: 100%;
     font-family: "Righteous";
     font-weight: 400;
@@ -90,24 +102,30 @@ h1 {
     margin: 20px 0px;
 }
 
+.main_section{
+    height: 50%;
+}
+
 img{
     width: 100%;
     height: 100%;
 }
+
+/*Index*/
 
 .a_img-principal{
     display: block;
     overflow: hidden;
     border-radius: 25px;
     height: 300px;
-    box-shadow:  
-        30px 30px 200px #5c5ca0,
-        -30px -30px 200px #3333ff;
-    transition: transform 0.5s ease;
+    box-shadow: var(--shadow-blue);
+        
+    transition: var(--transition-ease-5s);
     
     &:hover{
         transform: scale(1.1);
         cursor: pointer;
+
     }
     
 }
@@ -117,14 +135,34 @@ img{
     height: 100%;
 }
 
-.div--game_img{
-    width: 300px;
+/*About me*/
+
+.about_me{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        text-align: center;
+    }
+
+    p{
+        width: 70%;
+        padding: 0px 80px;
+    }
 }
 
 .about_me_img{
-    width: 125px;
-    border-radius: 100%;
+    height: 300px;
+    border-radius: 10%;
     overflow: hidden;
 
+}
+
+/*Hobies*/
+
+.div--game_img{
+    width: 300px;
 }
 
