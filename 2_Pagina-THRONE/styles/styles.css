@@ -1,0 +1,148 @@
+/*RESET*/
+
+
+*{
+	text-decoration: none;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+}
+
+/*Mis variables*/
+
+:root{
+    --color-bg: #fff;
+    --color-text: #000;
+    --color-link: #000000;
+    --color-link-hover: ;
+    --color-button-bg: #8b8b8b;
+
+    --transition-ease-5s: all 0.5s ease;
+    --shadow-blue: 30px 30px 200px #5c5ca0,-30px -30px 200px #3333ff;
+}
+
+body{
+    background: var(--color-bg);
+    color: var(--color-text);
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+}
+
+.max-width-1200px{
+    max-width: 1200px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+
+    .header_nav{
+        align-items: center;
+        width: 60%;
+        height: 35px;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    margin: 50px 0px;
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;  /* Quita el subrayado */
+    color: inherit;        /* Hereda el color del elemento padre */
+    background: none;      /* Quita el fondo */
+    border: none;          /* Quita el borde */
+    padding: 0;            /* Quita el padding */
+    margin: 0;             /* Quita el margin */
+    display: inline;       /* Asegura que se comporte como un enlace */
+    font: inherit;/* Hereda la fuente del elemento padre */
+
+    transition: var(--transition-ease-5s);
+}
+
+.a_hover:hover{
+
+    color: var(--color-link-hover);      /* Cambia el color del texto al color de fondo */
+    border-bottom: var(--color-link-hover) 1px solid;  /* Agrega un borde inferior al color de fondo */
+}
+
+h1,h2,h3,h4,h5,h6{
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.main_section{
+    height: 50%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*HEADER*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header_PLogo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.nav_ul--flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.butons{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    background: var(--color-button-bg);
+    width: 40px;
+    height: 40px;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}

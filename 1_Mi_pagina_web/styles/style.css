@@ -69,7 +69,6 @@ footer{
     align-items: center;
 }
 
-
 a {
     text-decoration: none;  /* Quita el subrayado */
     color: inherit;        /* Hereda el color del elemento padre */
