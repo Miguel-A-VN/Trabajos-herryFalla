@@ -23,20 +23,17 @@
     --transition-ease-5s: all 0.5s ease;
     --shadow-blue: 30px 30px 200px #5c5ca0,-30px -30px 200px #3333ff;
 }
-
 body{
     background: var(--color-bg);
     color: var(--color-text);
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
-
 .max-width-1200px{
     max-width: 1200px;
 }
-
 header{
     display: flex;
     flex-wrap: wrap;
@@ -50,11 +47,6 @@ header{
         height: 35px;
     }
 }
-
-li{
-    list-style: none;
-}
-
 main{
     margin: 50px 0px;
     width: 100%;
@@ -65,14 +57,9 @@ main{
     align-items: center;
     overflow: hidden;
 }
-
-footer{
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li{
+    list-style: none;
 }
-
 a {
     text-decoration: none;  /* Quita el subrayado */
     color: inherit;        /* Hereda el color del elemento padre */
@@ -85,30 +72,24 @@ a {
 
     transition: var(--transition-ease-5s);
 }
-
 .a_hover:hover{
 
     color: var(--color-link-hover);      /* Cambia el color del texto al color de fondo */
     border-bottom: var(--color-link-hover) 1px solid;  /* Agrega un borde inferior al color de fondo */
 }
-
-h1,h2,h3,h4,h5,h6{
-    width: 100%;
+h1,h2,h3,h4,h5,h6{ /* Estilos para los títulos Modificar dependiendo de el tipo de letra que desea utilizar*/
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-
+}
 .title{
     width: 100%;
     text-align: center;
     margin: 20px 0px;
 }
-
 .main_section{
     height: 50%;
 }
-
 img{
     width: 100%;
     height: 100%;
@@ -120,16 +101,24 @@ img{
 .header{
     display: flex;
     justify-content: space-between;
-
 }
 .header_PLogo{
     display: flex;
+    flex-wrap: wrap;
+    width: 34%;
     align-items: center;
-    width: 20%;
+}
+.logoImg{
+    width: 30px;
 }
 .nav_ul--flex{
     display: flex;
     width: 100%;
+    justify-content: space-evenly;
+}
+.header_language{
+    display: flex;
+    width: 20%;
     justify-content: space-evenly;
 }
 .butons{
@@ -139,8 +128,12 @@ img{
 }
 .button{
     background: var(--color-button-bg);
+    color: var(--color-text);
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     &:hover{
         cursor: pointer;
