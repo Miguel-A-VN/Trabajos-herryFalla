@@ -1,0 +1,98 @@
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*VARIABLES*/
+
+:root {
+    --max-width: 1100px;
+    --white: #F3F2F0;
+    --light-grey: #eee;
+    --grey: #444;
+    --dark-grey: #333;
+    --black: #000;
+    --primary-color: #008CBA;
+    --secondary-color: #00A8B4;
+
+    --modal-color: #EAE6E3;
+
+}                                   
+
+/*GENERAL*/
+
+body {
+    background-color: var(--white);
+    color: var(--dark-grey);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.max-width-1200px {
+    max-width: 1200px;
+}
+
+/*TYPOGRAPHY*/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.modal {
+    /*cemtar con position absolute*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*Tamaño del modal*/
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+
+    /*Colores*/
+    background-color: var(--modal-color);
+
+    /*centrar contenido flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
