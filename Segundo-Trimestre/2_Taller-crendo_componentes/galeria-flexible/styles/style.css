@@ -1,0 +1,104 @@
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+
+:root {
+    --max-width: 1100px;
+    --white: #F3F2F0;
+    --light-grey: #eee;
+    --grey: #444;
+    --dark-grey: #333;
+    --black: #000;
+    --primary-color: #008CBA;
+    --secondary-color: #00A8B4;
+
+    --modal-color: #EAE6E3;
+
+}                                   
+
+/*General*/
+
+body {
+    background-color: var(--white);
+    color: var(--dark-grey);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.max-width-1200px {
+    max-width: 1200px;
+}
+
+/*Typography*/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.main_section {
+    height: 100vh;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.box_img {
+    width: 40%;
+    min-height: 100px;
+    max-height: 500px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+
+    &:hover { 
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
