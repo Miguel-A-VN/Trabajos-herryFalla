@@ -16,6 +16,7 @@
 :root{
     --color-bg: #fff;
     --color-text: #000;
+    --colorButton-text: #fff;
     --color-link: #000000;
     --color-link-hover: ;
     --color-button-bg: #8b8b8b;
@@ -34,39 +35,12 @@ body{
 .max-width-1200px{
     max-width: 1200px;
 }
-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-
-    .header_nav{
-        align-items: center;
-        width: 60%;
-        height: 35px;
-    }
-}
-main{
-    margin: 50px 0px;
-    width: 100%;
-    height: 70vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 li{
     list-style: none;
 }
 a {
-    text-decoration: none;  /* Quita el subrayado */
     color: inherit;        /* Hereda el color del elemento padre */
     background: none;      /* Quita el fondo */
-    border: none;          /* Quita el borde */
-    padding: 0;            /* Quita el padding */
-    margin: 0;             /* Quita el margin */
     display: inline;       /* Asegura que se comporte como un enlace */
     font: inherit;/* Hereda la fuente del elemento padre */
 
@@ -98,18 +72,30 @@ img{
 
 /*HEADER*/
 
-.header{
+header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    padding: 10px;
 }
 .header_PLogo{
     display: flex;
     flex-wrap: wrap;
-    width: 34%;
     align-items: center;
+    gap: 20px;
 }
 .logoImg{
-    width: 30px;
+    width: 40px;
+}
+.header_nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    justify-content: space-evenly;
+
 }
 .nav_ul--flex{
     display: flex;
@@ -118,18 +104,16 @@ img{
 }
 .header_language{
     display: flex;
-    width: 20%;
     gap:20px;
     justify-content: space-evenly;
 }
 .butons{
-    width: 20%;
     display: flex;
     justify-content: space-evenly;
 }
 .button{
     background: var(--color-button-bg);
-    color: var(--color-text);
+    color: var(--colorButton-text);
     width: 40px;
     height: 40px;
     display: flex;
@@ -139,4 +123,16 @@ img{
     &:hover{
         cursor: pointer;
     }
+}
+/* Main */
+
+main{
+    margin: 50px 0px;
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
