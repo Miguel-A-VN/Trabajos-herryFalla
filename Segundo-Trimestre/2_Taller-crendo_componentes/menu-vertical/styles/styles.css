@@ -15,14 +15,9 @@
 
 :root{
     --color-bg: #fff;
-    --color-text: #000;
-    --colorButton-text: #fff;
-    --color-link: #000000;
-    --color-link-hover: ;
-    --color-button-bg: #8b8b8b;
-
-    --transition-ease-5s: all 0.5s ease;
-    --shadow-blue: 30px 30px 200px #5c5ca0,-30px -30px 200px #3333ff;
+    --color-bg2: #ddd;
+    --color-txt: #000;
+    --color-txt2: #fff;
 }
 body{
     background: var(--color-bg);
@@ -35,6 +30,13 @@ body{
 .max-width-1200px{
     max-width: 1200px;
 }
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
 li{
     list-style: none;
 }
@@ -43,8 +45,6 @@ a {
     background: none;      /* Quita el fondo */
     display: inline;       /* Asegura que se comporte como un enlace */
     font: inherit;/* Hereda la fuente del elemento padre */
-
-    transition: var(--transition-ease-5s);
 }
 .a_hover:hover{
 
@@ -70,11 +70,29 @@ img{
 }
 
 /* Horizontal-Menu */
-
-.horizontal-menu{
+.nav_vertical-menu{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 90vw;
-    padding: 10px;
+    width: 80%;
+    margin: auto;
+    gap: 5px;
+}
+.vertical-menu_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    height: 45px;
+    background: var(--color-bg2);
+}
+.nav-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-enter{
+    background: var(--color-bg);
+    color: var(--color-txt);
+    padding: 5px;
+    border-radius: 2px;
 }
