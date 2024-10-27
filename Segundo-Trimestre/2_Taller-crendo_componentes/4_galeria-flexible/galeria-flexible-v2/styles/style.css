@@ -87,6 +87,7 @@ p {
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+    padding: 50px;
 }
 .gallery-item {
     flex: 1 1 calc(20% - 20px);
