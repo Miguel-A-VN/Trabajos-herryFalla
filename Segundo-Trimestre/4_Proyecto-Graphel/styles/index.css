@@ -58,4 +58,5 @@ main.main--about{
 
 article.article--services{
 	width: 100%;
+	background: var(--card-color-bg);
 }
