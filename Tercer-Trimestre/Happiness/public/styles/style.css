@@ -1,0 +1,261 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-primary: #f5cb00;
+    --color-secondary: #e6e6e6;
+    --color-withe: #fff;
+    --color-tercaery: #000;
+    --padding-y: 6%;
+}
+
+a,li{
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    font-weight: 700;
+}
+
+button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0px 20px;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+button.btn1{
+    background: var(--color-primary);
+    color: var(--color-tercaery);
+}
+
+button.btn2{
+    background: var(--color-tercaery);
+    color: var(--color-withe);
+}
+
+.max-width{
+    max-width: 1520px;
+    min-width: 320px;
+    position: relative;
+    margin: auto;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;      
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 55px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+/* === Header === */
+
+header.header{
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0px var(--padding-y);
+    width: 100%;
+}
+
+nav.nav-header{
+    display: none;
+    ul{
+        display: flex;
+        gap: 30px;
+        font-size: 1.2rem;
+    }
+
+    a{
+        opacity: 0.6;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/* main */
+
+
+section.section, div.div-sec4{
+    padding: 10% var(--padding-y);
+    background: var(--color-withe);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 50px;
+
+}
+
+article.article{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.section1{
+    /* height: calc(90vh + 200px); */
+    /* padding-top: 80px; */
+    /* justify-content: space-evenly; */
+
+    /* picture{
+        height: 50%;
+    } */
+
+    /* article{
+        // justify-content: space-between;
+        // height: 400px; 
+        // padding: 20px; 
+    } */
+
+    h2{
+        font-size: 4.2rem;
+    }
+}
+
+section.section2--float{
+    background: var(--color-secondary);
+    justify-content: space-evenly;
+    gap: 50px;
+
+    picture{
+        width: 40%;
+    }
+
+    /* height: 400px;
+    width: 80%;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.2); */
+}
+
+section.section3--yellow{
+    background: var(--color-primary);
+    /* height: calc(90vh + 200px); */
+}
+
+section.section4{
+    background: var(--color-withe);
+
+    h2{
+        color: var(--color-primary);
+    }
+}
+
+div.div--shadow{
+    padding: 0;
+}
+
+.graph-1{
+    width: 200px;
+}
+
+section.section5{
+    background: var(--color-tercaery);
+    color: var(--color-withe);
+
+    h3{
+        color: var(--color-primary);
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+section.section7{
+    background: var(--color-secondary);
+}
+
+form.form{
+    background: var(--color-tercaery);
+    color: var(--color-withe);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+p.p-form{
+    font-size: 0.8rem;
+}
+
+div.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--color-withe);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background: var(--color-tercaery);
+    color: var(--color-withe);
+}
+
+/* div.field-name{
+    width: 46%;
+}
+
+div.field-surname{
+    width: 46%;
+} */
+
+section.section9{
+    background: var(--color-primary);
+}
+
+footer{
+    /* height: 80vh; */
+    background: var(--color-tercaery);
+}
+
+.footer-logo{
+    width: 100px;
+}
+
+.social-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
