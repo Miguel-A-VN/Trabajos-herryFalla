@@ -1,0 +1,383 @@
+/* Reset y configuraciones globales*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --color-primary: #1e172f;
+    --color-secondary: #f41486;
+    --color-tertiary: #f1f2f7;
+    --color-white: #fff;
+    --color-bg-btn: linear-gradient(to right, rgb(118, 68, 216), rgb(15, 121, 223));
+    --color-pink-GR: linear-gradient(145deg, rgba(234, 114, 176, 1) 30%, rgba(244, 20, 134, 1) 100%);
+    --color-bg-op: #342f5d6f;
+
+    --max-width-screen: 100vw;
+    --pading-y: 12%;
+
+}
+
+body {
+    background: var(--color-tertiary);
+}
+
+/* Elementos generales*/
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img,
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    width: 100%;
+}
+
+.max-width {
+    max-width: var(--max-width-screen);
+    margin: 0 auto;
+}
+
+.flex-x,
+.flex-y {
+    display: flex;
+}
+
+.flex-y {
+    flex-direction: column;
+}
+
+/* Botones*/
+.btn {
+    height: 40px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botón 1 */
+.btn__c1 {
+    width: auto;
+    width: 100px;
+    font-weight: 700;
+    background: var(--color-bg-btn);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+/* Botón 2 */
+.btn__c2 {
+    padding: 0px 15px;
+    font-weight: 600;
+    text-align: center;
+    background: transparent;
+    color: var(--color-white);
+    border-radius: 5px;
+    border: var(--color-white) solid 2px;
+
+    &:hover {
+        background: var(--color-white);
+        color: var(--color-secondary);
+    }
+}
+
+/* Botón 3 */
+.btn__c3 {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+/* Titulos y alineaciones*/
+.title-h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+.title--h2 {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.title--h3 {}
+
+.txt-center {
+    text-align: center;
+}
+
+/* ==========================================================================================================
+
+/* Header */
+.header {
+    background: var(--color-primary);
+    width: 100%;
+    color: var(--color-white);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--pading-y);
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+}
+
+.img-logo {
+    width: 55px;
+    height: 58px;
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 9px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+}
+
+.text-log {
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+
+    span {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
+
+.bar-navegation {
+    width: 50%;
+    height: 100%;
+}
+
+.navegation-list {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* ==========================================================================================================
+
+/* main */
+
+.section {
+    width: 100%;
+}
+
+.section__1 {
+
+    background: url("../img/hojasFondo.jpg") no-repeat right, var(--color-primary);
+    background-size: 50% 100%;
+    padding: 0;
+    width: 100%;
+    min-height: 570px;
+    color: var(--color-white);
+
+    .article {
+        background: var(--color-bg-op);
+        padding: 150px var(--pading-y) 50px;
+        width: 100%;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productDescription {
+        width: 50%;
+        height: 80%;
+        justify-content: space-between;
+    }
+
+    .paragraph {
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        width: fit-content;
+        gap: 7px;
+        padding: 5px;
+        border: 2px solid #eee3;
+        border-radius: 2px;
+    }
+
+    .cel {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img--cel {
+        width: 230px;
+        height: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
+
+.section__2 {
+    background: var(--color-tertiary);
+    flex-wrap: wrap;
+    padding: 70px var(--pading-y);
+}
+
+.functions--img {
+    margin-top: 70px;
+    width: 50%;
+}
+
+.article--alpha {
+    width: 50%;
+    padding: 0px 70px;
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+
+
+.check-circle_img {
+    width: 15px;
+}
+
+.section__3 {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 50px var(--pading-y);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.planPricing-info {
+    margin-bottom: 50px;
+    gap: 50px;
+
+    p {
+        width: 700px;
+    }
+}
+
+.plansPricing_cards {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.card {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: var(--color-white);
+    color: var(--color-primary);
+    width: 25%;
+    padding: 10px 0px;
+    transition: all 0.2s ease-in-out;
+    gap: 25px;
+    min-width: 300px;
+    border-radius: 5px;
+
+    .titleCard {
+        font-size: 1.3rem;
+    }
+
+
+    p{
+        width: 80%;
+    }
+
+    ul{
+        gap: 10px;
+        align-items: center;
+    }
+
+    li{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card:hover {
+
+    fill: var(--color-secondary);
+    cursor: pointer;
+    scale: 1.03;
+
+    .titleCard {
+        color: var(--color-secondary);
+    }
+
+    .btn__c3 {
+        background: var(--color-pink-GR);
+        color: var(--color-white);   
+    }
+}
+
+.pricing,
+.button {
+    width: 100%;
+    height: 60px;
+    background: var(--color-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logCard {
+    width: 80px;
+}
+
+.icon {
+    width: 15px;
+}
+
+.pricing {
+    align-items: start;
+}
+
+.span--numberBold {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/*Footer*/
+
+.footer {
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px var(--pading-y);
+}

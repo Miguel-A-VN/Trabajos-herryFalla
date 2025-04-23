@@ -18,7 +18,6 @@
 }
 
 .max-width-1400px {
-	max-width: 1400px;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -64,9 +63,11 @@ main.main--proyects {
     width: 100%;
     min-height: 600px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.section--segundo-trimestre {
+.section {
     display: grid;
     gap: 20px;
     width: 100%;
@@ -93,6 +94,12 @@ main.main--proyects {
         box-shadow: 0px 0px 10px 0px #ffffff52;
         cursor: pointer;
     }
+}
+
+span.incomplete{
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .card--proyect a{

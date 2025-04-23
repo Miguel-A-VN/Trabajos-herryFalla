@@ -12,6 +12,8 @@
     --color-withe: #fff;
     --color-tercaery: #000;
     --padding-y: 6%;
+
+    --padding-sep: 9%;
 }
 
 a,li{
@@ -50,13 +52,18 @@ button.btn2{
     color: var(--color-withe);
 }
 
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
 .max-width{
     max-width: 1520px;
     min-width: 320px;
     position: relative;
     margin: auto;
 }
-
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
@@ -73,6 +80,7 @@ h2{
 p{
     font-size: 1.2rem;
 }
+
 /* === Header === */
 
 header.header{
@@ -86,7 +94,9 @@ header.header{
 }
 
 nav.nav-header{
+
     display: none;
+
     ul{
         display: flex;
         gap: 30px;
@@ -102,18 +112,12 @@ nav.nav-header{
     }
 }
 
-img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
 /* main */
 
 
 section.section, div.div-sec4{
     padding: 10% var(--padding-y);
     background: var(--color-withe);
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -130,20 +134,7 @@ article.article{
 }
 
 section.section1{
-    /* height: calc(90vh + 200px); */
-    /* padding-top: 80px; */
-    /* justify-content: space-evenly; */
-
-    /* picture{
-        height: 50%;
-    } */
-
-    /* article{
-        // justify-content: space-between;
-        // height: 400px; 
-        // padding: 20px; 
-    } */
-
+    
     h2{
         font-size: 4.2rem;
     }
@@ -157,19 +148,10 @@ section.section2--float{
     picture{
         width: 40%;
     }
-
-    /* height: 400px;
-    width: 80%;
-    position: absolute;
-    top: 11%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.2); */
 }
 
 section.section3--yellow{
     background: var(--color-primary);
-    /* height: calc(90vh + 200px); */
 }
 
 section.section4{
@@ -233,14 +215,6 @@ input{
     color: var(--color-withe);
 }
 
-/* div.field-name{
-    width: 46%;
-}
-
-div.field-surname{
-    width: 46%;
-} */
-
 section.section9{
     background: var(--color-primary);
 }
@@ -248,14 +222,113 @@ section.section9{
 footer{
     /* height: 80vh; */
     background: var(--color-tercaery);
+    color: var(--color-primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+ul.ul-footer{
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span.line{
+    width: 100%;
+    height: 1px;
+    background: var(--color-withe);
+    margin: 0px 2%;
+    display: flex;
 }
 
 .footer-logo{
     width: 100px;
 }
 
+div.social{
+    display: flex;
+    width: 50%;
+    background: var(--color-secondary);
+}
+
 .social-icon{
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+
+/* === Media Queries === */
+
+@media screen and (min-width: 650px){
+
+    header.header{
+        justify-content: space-between;
+    }
+
+    nav.nav-header{
+        display: flex;
+    }
+
+    section.section{
+        flex-wrap: nowrap;
+    }
+
+    article.article{
+        width: 50%;
+        justify-content: space-between; 
+            padding: 20px;
+    }
+
+    section.section1{
+        max-height: 1000px;
+        justify-content: space-evenly;
+        padding-bottom: var(--padding-sep);
+
+        picture{
+            width: 50%;
+        }
+    }
+
+    section.section2--float{
+        max-height: 400px;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 725px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.2);
+        padding: 5%;
+
+        picture{
+            width: 25%;
+            max-width: 200px;
+        }
+    }
+
+    section.section3--yellow{
+        max-height: 1000px;
+        justify-content: space-evenly;
+        padding-top: var(--padding-sep);
+
+        picture{
+            width: 50%;
+        }
+
+    }
+
+
+    /* Form */
+
+    div.field-name{
+        width: 46%;
+    }
+
+    div.field-surname{
+        width: 46%;
+    }
 }
