@@ -4,10 +4,11 @@ Este repositorio contiene los **trabajos y proyectos desarrollados** durante el 
 
 - **Desarrollo Frontend** con **HTML y CSS**  
 - **Despliegue de proyectos** utilizando **GitHub Pages**
-
+<!--
 ## 🔗 Despliegue
 Puedes ver los proyectos publicados aquí:  
 [https://Miguel-A-VN.github.io](https://Miguel-A-VN.github.io)
+-->
 
 ## 📂 Contenido
 - **Prácticas de HTML**: Estructura básica de páginas web.
